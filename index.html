@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shiro 的小站</title>
+  <meta name="description" content="Shiro 的个人主页">
+  <style>
+    /* ===== 颜色：想换主题色，改这里就好 ===== */
+    :root {
+      --bg: #fbf8f4;
+      --card: #ffffff;
+      --text: #2b2a33;
+      --muted: #6e6b78;
+      --accent: #e06c9f;
+      --accent-soft: #fbe3ee;
+      --line: #ece6df;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #17161c;
+        --card: #211f28;
+        --text: #ecebf2;
+        --muted: #a19eae;
+        --accent: #f28cb8;
+        --accent-soft: #3a2531;
+        --line: #2f2c38;
+      }
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+      line-height: 1.7;
+      padding: 56px 16px 40px;
+    }
+    main { max-width: 640px; margin: 0 auto; }
+
+    header { text-align: center; margin-bottom: 40px; }
+    .avatar {
+      width: 104px; height: 104px; border-radius: 50%;
+      margin: 0 auto 18px;
+      display: grid; place-items: center;
+      font-size: 48px;
+      background: var(--accent-soft);
+      border: 3px solid var(--card);
+      box-shadow: 0 0 0 2px var(--accent);
+    }
+    h1 { font-size: 30px; letter-spacing: .02em; }
+    .tagline { color: var(--muted); margin-top: 4px; }
+
+    .links { display: flex; justify-content: center; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+    .links a {
+      color: var(--accent); text-decoration: none; font-size: 14px;
+      padding: 6px 14px; border-radius: 999px;
+      background: var(--accent-soft);
+      transition: transform .15s;
+    }
+    .links a:hover { transform: translateY(-2px); }
+
+    section {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 22px 24px;
+      margin-bottom: 16px;
+    }
+    h2 { font-size: 17px; margin-bottom: 10px; }
+    h2::before { content: "✦ "; color: var(--accent); }
+    p + p { margin-top: 8px; }
+
+    .tags { display: flex; flex-wrap: wrap; gap: 8px; }
+    .tags span {
+      font-size: 14px; padding: 4px 12px; border-radius: 8px;
+      border: 1px solid var(--line); color: var(--muted);
+    }
+
+    ul.list { list-style: none; }
+    ul.list li { padding: 8px 0; border-top: 1px dashed var(--line); }
+    ul.list li:first-child { border-top: 0; padding-top: 0; }
+    ul.list b { display: block; }
+    ul.list small { color: var(--muted); }
+
+    footer { text-align: center; color: var(--muted); font-size: 13px; margin-top: 32px; }
+  </style>
+</head>
+<body>
+  <main>
+    <!-- ===== 头部：名字、一句话介绍、链接 ===== -->
+    <header>
+      <div class="avatar">🌸</div>
+      <h1>Shiro</h1>
+      <p class="tagline">正在学写代码的新手 · 慢慢来，比较快</p>
+      <nav class="links">
+        <a href="https://github.com/jiangyuShiro">GitHub</a>
+        <!-- 想加别的链接，复制上面一行改一下就行 -->
+      </nav>
+    </header>
+
+    <!-- ===== 关于我 ===== -->
+    <section>
+      <h2>关于我</h2>
+      <p>你好呀！我是 Shiro，这是我的第一个网页。</p>
+      <p>在这里写几句关于你自己的话吧：喜欢什么、在做什么、想成为什么样的人。</p>
+    </section>
+
+    <!-- ===== 兴趣爱好 ===== -->
+    <section>
+      <h2>喜欢的东西</h2>
+      <div class="tags">
+        <span>🎵 音乐</span>
+        <span>🎮 游戏</span>
+        <span>📚 看书</span>
+        <span>💻 写代码</span>
+      </div>
+    </section>
+
+    <!-- ===== 正在做的事 ===== -->
+    <section>
+      <h2>最近在做</h2>
+      <ul class="list">
+        <li><b>我的个人主页</b><small>就是你现在看到的这个！</small></li>
+        <li><b>学习编程</b><small>从 HTML 开始，一步一步来</small></li>
+      </ul>
+    </section>
+
+    <footer>© 2026 Shiro · 用心做的小站</footer>
+  </main>
+</body>
+</html>
